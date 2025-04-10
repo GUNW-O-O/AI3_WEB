@@ -63,6 +63,10 @@ input::placeholder {
     border-radius: 0.2cm;
 }
 
+.btnblock input:hover {
+    background-color: rgb(56, 92, 199);
+}
+
 .sign {
     font-size: 13px;
     text-align: center;
