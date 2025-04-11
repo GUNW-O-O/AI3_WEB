@@ -80,7 +80,6 @@ body {/* background-color: black; */ color: white;}
     transition: all 0.3s;
 }
 /* 헤더 */
-header {}
 
 /* 메인헤더 */
 .main-header {
@@ -96,7 +95,6 @@ header {}
     align-items: center;
     column-gap: 40px;
 }
-.util .search-box {}
 .util .search-form {
     display: flex;
     justify-content: center;
@@ -116,6 +114,7 @@ header {}
     background-color: transparent;
     outline: none;
     border: none;
+    color: white;
 }
 .util .search-form input::placeholder {
     color: rgba(240, 240, 240, 0.6);
