@@ -1,0 +1,75 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+body {
+    background-color: #ece0c8;
+}
+ul {list-style-type: none; color: black;}
+a {text-decoration: none; }
+
+.wrap {
+    background-color: #572402;
+    margin: 15px 20px;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    height: 80px;
+}
+.nav {margin-left: 10px;}
+.nav ul {
+    display: flex;
+    margin: 0 20px;
+}
+
+.nav ul li {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 20px;
+    padding-left: 10px;
+    border-left: 0.5px solid wheat;
+    color: wheat;
+}
+.nav ul a {
+    font-size: 14px;
+    font-weight: 500;
+    color: wheat;
+}
+.nav ul span {
+    display: block;
+}
+
+.util .langs {
+    display: flex;
+}
+.util .langs .earth {
+    margin: 0 15px 0 0;
+    align-items: center;
+}
+.util .langs .enko {
+    font-size: 13px;
+    font-weight: bold;
+    margin-right: 20px;
+    width: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: wheat;
+    
+}
+.enko a {
+    color: wheat;
+}
+
+.util .langs .enko #ko {
+    border-left: 0.3px solid wheat;
+    padding-left: 7px;
+}
+
+.util .langs .sns {
+    width: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
