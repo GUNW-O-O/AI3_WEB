@@ -6,11 +6,18 @@ body {
 ul {list-style-type: none; color: black;}
 a {text-decoration: none; }
 
+header {
+    width: 100%;
+
+}
+
 .wrap {
     background-color: #572402;
-    margin: 15px 20px;
-    position: absolute;
-    width: 100%;
+    /* margin: 15px 20px; */
+    /* position: absolute; */
+    width: 1680px;
+    max-width: 100%;
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;

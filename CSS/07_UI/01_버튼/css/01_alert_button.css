@@ -6,6 +6,7 @@
 }
 
 .btn {
+    display: inline-block;
     border: none;
     padding: 14px 28px;
     cursor: pointer;
