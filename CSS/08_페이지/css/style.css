@@ -12,9 +12,18 @@ header {
 .btn {
     display: inline-block;
     padding: 12px 24px;
-    background-color: var(--main-color);
+    background-color: black;
     color: white;
     border-radius: 8px;
+}
+.btn.btn-primary {
+    background-color: var(--main-color);
+
+}
+.btn.btn-lg {
+    width: 100%;
+    padding: 24px 48px;
+    font-size: 24px;
 }
 section {
     min-height: var(--sec-min-height);
@@ -247,4 +256,150 @@ footer .sns {
     .grid.col-sm-3 {grid-template-columns: repeat(3, auto);}
     .grid.col-sm-4 {grid-template-columns: repeat(4, auto);}
     .grid.col-sm-5 {grid-template-columns: repeat(5, auto);}
+}
+
+/* ###################로그인페이지################### */
+section#login {}
+[name="toggle-login"] {display: none;}
+.login-wrap {
+    width: 670px;
+    margin: auto;
+    min-height: 1100px;
+}
+.login-wrap .tab {
+    display: inline-block;
+    width: 310px;
+    text-align: center;
+    padding: 30px 50px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #aaa;
+    border-bottom : 1px solid #aaa;
+}
+/* 탭 전환 */
+#radio-login:checked ~ .tab-box #tab-login {
+    color: black;
+    border-bottom-color: black;
+}
+#radio-order:checked ~ .tab-box #tab-order {
+    color: black;
+    border-bottom-color: black;
+}
+/* 폼전환 */
+#radio-login:checked ~ #form-login {
+    display: block;
+}
+#radio-order:checked ~ #form-order {
+    display: block;
+}
+.login-wrap .input {
+    display: inline-block;
+    width: 100%;
+    padding: 20px 40px;
+    outline: none;
+    border: 1px solid #aaa;
+    font-size: 20px;
+}
+.login-wrap .input:focus {
+    border:1px solid var(--main-color);
+    box-shadow: 0 0 10px rgba(255, 195, 195, 0.8);
+}
+.login-wrap [type="checkbox"] {
+    transform: scale(1.5);
+}
+.login-wrap p {
+    color: #aaa;
+}
+.login-wrap label {
+    user-select: none;
+    cursor: pointer;
+}
+.login-wrap .line {
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    width: 1px;
+    height: 14px;
+    background-color: #111;
+}
+#form-login {
+    display: none;
+}
+#form-order {
+    display: none;
+}
+
+/* 회원가입 */
+section#join {}
+
+.join-wrap {
+    width: 768px;
+    margin: auto;
+}
+
+.join-wrap label {
+    min-width: 200px;
+    font-size: 20px;
+}
+.join-wrap .input {
+    width: calc(100% - 200px);
+    padding: 20px 10px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #aaa;
+    font-size: 20px;
+}
+
+.border-box {
+    border : 1px solid #aaa;
+    border-radius: 10px;
+    padding: 20px;
+    color: #aaa;
+}
+.join-wrap [type="radio"] {
+    transform: scale(1.5);
+}
+.agree-text {
+    font-size: 24px;
+}
+.color-accent {
+    color: var(--accent-color);
+    font-weight: bold;
+}
+#join-floating {
+    position: fixed;
+    left: 100px;
+    bottom: 100px;
+}
+
+/* 상품목록 */
+section#list {}
+section#list .card {
+    width: 310px;
+}
+section#list .card .img-box {
+    height: 260px;
+}
+section#list .card .img-box  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+section#list .card .content-box {}
+section#list .card .content-box .title {
+    font-weight: bold;
+}
+section#list .card .content-box .tag {
+    color: wheat;
+}
+section#list .card .content-box span.price {
+    font-weight: bold;
+}
+section#list .card .content-box span.origin-price {
+    color: wheat;
+    text-decoration: line-through;
+}
+section#list .card .content-box span.discount {
+    color: red;
+    font-weight: bold;
 }
