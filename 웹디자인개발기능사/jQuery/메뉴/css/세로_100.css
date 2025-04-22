@@ -42,7 +42,6 @@ header {
 }
 
 .sub .inner {
-  width: clac( 1200px - 165px);
   width: 100%;
   display: none;
   flex-wrap: wrap;

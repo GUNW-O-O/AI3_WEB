@@ -32,9 +32,7 @@ a {text-decoration: none; color: black;}
     color: white;
 }
 .submenu {
-    max-height: 0;
-    opacity: 0;
-    transition: all 0.5s;
+    display: none;
     position: absolute;
     top: 100%;
     left: -1px;
@@ -47,12 +45,8 @@ a {text-decoration: none; color: black;}
     position: absolute;
     top: 100%;
     width: 1200px;
-    height: 0px;
-    background-color: lightsteelblue;
-    opacity: 0;
-    z-index: 1;
-}
-#back.active {
     height: 200px;
-    opacity: 1;
+    display: none;
+    background-color: lightsteelblue;
+    z-index: 1;
 }

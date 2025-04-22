@@ -1,22 +1,20 @@
-document.addEventListener("DOMContentLoaded", (e) => {
-    const mainMenuList = document.querySelectorAll('.main-menu > .menu-item')
+$(function() {
+    const mainMenu = $('.main-menu > .menu-item')
 
-    mainMenuList.forEach(function(menu) {
+    // mainMenu.on('mouseover', function() {
+    //     $('.submenu').stop().slideDown()
+    // })
+    // mainMenu.on('mouseout', function() {
+    //     $('.submenu').stop().slideUp()
+    // })
 
-        // 모든 서브 메뉴
-        const subMenuList = document.querySelectorAll('.submenu')
 
-        // 마우스 올렸을 때
-        menu.addEventListener("mouseover", () => {
-            subMenuList.forEach((submenu) => {
-                submenu.classList.add('active')
-            })
-        })
-        // 마우스 벗어날 때
-        menu.addEventListener("mouseout", () => {
-            subMenuList.forEach((submenu) => {
-                submenu.classList.remove('active')
-            })
-        })
-    })
+    mainMenu.hover(
+        function() {
+            $('.submenu').stop().slideDown()
+        },
+        function() {
+            $('.submenu').stop().slideUp()
+        }
+    )
 })
