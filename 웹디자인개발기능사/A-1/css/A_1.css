@@ -15,22 +15,17 @@ a{text-decoration: none; color: black;}
    width: 1200px;
    height: 100px;
 }
-.header .util {
+.main-menu {
    margin-right: 20px;
 }
-.header .util ul {
+.main-menu ul {
    display: inline-block;
-   height: 100%;
-   align-items: center;
-   justify-content: center;
 }
-.header .util ul + a {
-   line-height: 100%;
+.menu-item a{
    height: 100%;
-   align-items: center;
-   justify-content: center;
+   width: 100%;
 }
-.header .util ul > li {
+.header .main-menu .sub-menu {
    display: none;
 }
 .img-slide {
