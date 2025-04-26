@@ -1,3 +1,22 @@
 * {margin: 0; padding: 0; box-sizing: border-box; border: 1px solid black;}
 ul {list-style-type: none; padding: 0;}
 a {text-decoration: none; color: black;}
+li {display: none;}
+.conatainer {
+   width: 100%;
+}
+.header {
+   width: 1200px;
+   height: 100px;
+   display: flex;
+   justify-content: space-between;
+}
+.header .logo {
+   width: 200px;
+}
+.header .main-menu {
+
+}
+.header .back {
+   display: none;
+}
