@@ -2,17 +2,20 @@
 ul {list-style-type: none; padding: 0;}
 a {text-decoration: none; color: black;}
 li {display: none;}
-.conatainer {
+.container {
    width: 100%;
+   display: flex;
    flex-direction: column;
+   align-items: center;
 }
 .header {
    width: 1200px;
    height: 100px;
    display: flex;
    justify-content: space-between;
+   padding-right: 20px;
 }
-.header .logo {
+.logo {
    width: 200px;
 }
 .header .main-menu {
@@ -29,4 +32,28 @@ li {display: none;}
 .img-slide {
    height: 300px;
    width: 1200px;
+}
+.content {
+   height: 200px;
+   width: 1200px;
+   display: grid;
+   grid-template-columns: repeat(3, auto);
+}
+.footer {
+   height: 100px;
+   width: 1200px;
+   display: flex;
+   justify-content: space-between;
+}
+.footer .copyright {
+   width: 800px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.footer .familysite {
+   width: 200px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
