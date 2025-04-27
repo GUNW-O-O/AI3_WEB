@@ -4,6 +4,7 @@ a {text-decoration: none; color: black;}
 li {display: none;}
 .conatainer {
    width: 100%;
+   flex-direction: column;
 }
 .header {
    width: 1200px;
@@ -15,8 +16,17 @@ li {display: none;}
    width: 200px;
 }
 .header .main-menu {
-
+   display: flex;
+}
+.header .main-menu a {
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 .header .back {
    display: none;
+}
+.img-slide {
+   height: 300px;
+   width: 1200px;
 }
