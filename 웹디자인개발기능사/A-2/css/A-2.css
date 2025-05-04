@@ -14,12 +14,15 @@ li {display: none;}
    display: flex;
    justify-content: space-between;
    padding-right: 20px;
+   align-items: end;
 }
 .logo {
    width: 200px;
+   height: 100px;
 }
 .header .main-menu {
    display: flex;
+   height: 50px;
 }
 .header .main-menu a {
    display: flex;
