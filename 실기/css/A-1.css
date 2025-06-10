@@ -2,6 +2,7 @@
 li {list-style-type: none; color: black;}
 a{text-decoration: none; color: inherit;}
 .container{
+   position: relative;
    margin: 0 auto;
    width: 1200px;
 }
@@ -105,6 +106,9 @@ nav>ul>li.on>a {
    padding: 10px;
    text-align: center;
 }
+.noticecon {
+   display: none;
+}
 .noticecon th {
    text-align: left;
 }
@@ -135,12 +139,29 @@ td a{
    text-align: center;
 }
 .gallcon {
-   display: flex;
+   /* display: flex; */
    display: none;
+   width: 400px;
+   height: 150px;
+   justify-content: space-evenly;
+   align-items: center;
+}
+.gall a {
+   display: block;
+   width: 100px;
+   height: 100px;
+   overflow: hidden;
+}
+.gall a img {
+   display: block;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
 }
 .on {
    position: absolute;
    top: 50px;
+   display: flex;
 }
 .active {
    background-color: #444;
@@ -153,6 +174,9 @@ td a{
 }
 .banner h1 {
    position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
    background-color: #555;
 }
 .banner a {
@@ -183,4 +207,86 @@ td a{
    width: 100%;
    height: 100%;
    object-fit: cover;
+}
+footer {
+   display: flex;
+   width: 1200px;
+   height: 100px;
+}
+footer .copyright {
+   display: flex;
+   height: 100px;
+   flex:1;
+   justify-content: center;
+   align-items: center;
+}
+footer .sns {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   width: 200px;
+   height: 100px;
+}
+.sns #F {
+   display: block;
+   text-align: center;
+   padding: 5px;
+   width: 40px;
+   height: 40px;
+   background-color: blue;
+   color: white;
+   font-weight: bold;
+   border-radius: 50%;
+}
+.sns #N {
+   display: block;
+   text-align: center;
+   padding: 5px;
+   width: 40px;
+   height: 40px;
+   background-color: green;
+   color: white;
+   font-weight: bold;
+   border-radius: 50%;
+}
+.sns #Y {
+   display: block;
+   text-align: center;
+   padding: 5px;
+   width: 40px;
+   height: 40px;
+   background-color: red;
+   color: white;
+   font-weight: bold;
+   border-radius: 50%;
+}
+.modal {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   width: 500px;
+   height: 600px;
+   z-index: 11;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+   flex-direction: column;
+   background-color: wheat;
+   display: none;
+}
+.modal img {
+   width: 400px;
+   height: 300px;
+}
+button {
+   width: 40px;
+   height: 20px;
+   cursor: pointer;
+}
+.modal .btn {
+   position: absolute;
+   bottom: 20px;
+   right: 30px;
 }
