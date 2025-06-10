@@ -31,7 +31,7 @@ nav>ul>li>a {
 }
 nav>ul>li:hover>a,
 nav>ul>li>a:focus,
-nav>ul>li.on>a {
+nav>ul>li.active>a {
    background-color: #ccc;
 }
 .sub {
@@ -262,19 +262,21 @@ footer .sns {
 }
 .modal {
    position: absolute;
+   display: none;
    top: 50%;
    left: 50%;
    transform: translate(-50%,-50%);
    width: 500px;
    height: 600px;
    z-index: 11;
-   display: flex;
    justify-content: center;
    align-items: center;
    gap: 20px;
    flex-direction: column;
    background-color: wheat;
-   display: none;
+   padding: 40px;
+   text-align: center;
+   font-size: 16px; font-weight: bold;
 }
 .modal img {
    width: 400px;

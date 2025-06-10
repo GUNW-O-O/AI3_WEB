@@ -5,7 +5,16 @@ $(function() {
    $('nav>ul>li').mouseleave(function(){
       $('.sub').stop().slideUp()
    })
-
+   $('nav>ul>li').focusin(function(){
+      $('.sub').slideDown()
+      $(this).addClass('active')
+   })
+   $('.sub li:last-child').focusout(function(){
+      $('nav>ul>li').removeClass('active')
+   })
+   $('nav li:last-child li:last-child').focusout(function(){
+      $('.sub').slideUp();
+   })
 
    let i = 0
    function slide() {
@@ -34,6 +43,7 @@ $(function() {
    })
    $('.popup').click(function(){
       $('.modal').show()
+      return false
    })
    $('.btn').click(function(){
       $('.modal').hide()
