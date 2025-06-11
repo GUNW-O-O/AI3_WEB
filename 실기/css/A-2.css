@@ -180,3 +180,34 @@ select {
    font-size: 20px;
    font-weight: bold;
 }
+.modal {
+   position: absolute;
+   width: 500px;
+   height: 600px;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   text-align: center;
+   padding: 30px;
+   align-items: center;
+   background-color: wheat;
+   display: none;
+}
+.modal a {
+   height: 400px;
+   overflow: hidden;
+   text-align: center;
+}
+.modal a img {
+   object-fit: cover;
+   width: 300px;
+   height: 100%;
+}
+.modal .btn {
+   padding: 10px;
+   width: 80px;
+}
+.modal #zz {
+   display: flex;
+   justify-content: end;
+}

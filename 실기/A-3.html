@@ -5,67 +5,115 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>A-3</title>
    <link rel="stylesheet" href="css/A-3.css">
+   <script src="js/jquery-3.7.1.min.js"></script>
+   <script src="js/A-3.js"></script>
 </head>
 <body>
    <div class="container">
-      <header>
-         <div class="header">
-            <div class="logo"><img src="" alt=""><a href=""></a></img></div>
-            <ul class="mainmenu">
-               <li class="menuitem">
-                  <a href="">메인메뉴1</a>
-                  <ul class="submenu">
-                     <li class="menuitem"><a href="">서브메뉴1</a></li>
-                     <li class="menuitem"><a href="">서브메뉴2</a></li>
-                     <li class="menuitem"><a href="">서브메뉴3</a></li>
-                     <li class="menuitem"><a href="">서브메뉴4</a></li>
+      <div class="header">
+         <div class="logo">
+            <a href="#"><img src="img/logo.jpg" alt=""></a>
+         </div>
+         <nav>
+            <ul>
+               <li><a href="#">메인메뉴1</a>
+                  <ul class="sub">
+                     <li><a href="#">서브메뉴1</a></li>
+                     <li><a href="#">서브메뉴2</a></li>
+                     <li><a href="#">서브메뉴3</a></li>
                   </ul>
                </li>
-               <li class="menuitem">
-                  <a href="">메인메뉴2</a>
-                  <ul class="submenu">
-                     <li class="menuitem"><a href="">서브메뉴1</a></li>
-                     <li class="menuitem"><a href="">서브메뉴2</a></li>
-                     <li class="menuitem"><a href="">서브메뉴3</a></li>
-                     <li class="menuitem"><a href="">서브메뉴4</a></li>
+               <li><a href="#">메인메뉴2</a>
+                  <ul class="sub">
+                     <li><a href="#">서브메뉴1</a></li>
+                     <li><a href="#">서브메뉴2</a></li>
+                     <li><a href="#">서브메뉴3</a></li>
                   </ul>
                </li>
-               <li class="menuitem">
-                  <a href="">메인메뉴3</a>
-                  <ul class="submenu">
-                     <li class="menuitem"><a href="">서브메뉴1</a></li>
-                     <li class="menuitem"><a href="">서브메뉴2</a></li>
-                     <li class="menuitem"><a href="">서브메뉴3</a></li>
-                     <li class="menuitem"><a href="">서브메뉴4</a></li>
+               <li><a href="#">메인메뉴3</a>
+                  <ul class="sub">
+                     <li><a href="#">서브메뉴1</a></li>
+                     <li><a href="#">서브메뉴2</a></li>
+                     <li><a href="#">서브메뉴3</a></li>
                   </ul>
                </li>
-               <li class="menuitem">
-                  <a href="">메인메뉴4</a>
-                  <ul class="submenu">
-                     <li class="menuitem"><a href="">서브메뉴1</a></li>
-                     <li class="menuitem"><a href="">서브메뉴2</a></li>
-                     <li class="menuitem"><a href="">서브메뉴3</a></li>
-                     <li class="menuitem"><a href="">서브메뉴4</a></li>
+               <li><a href="#">메인메뉴4</a>
+                  <ul class="sub">
+                     <li><a href="#">서브메뉴1</a></li>
+                     <li><a href="#">서브메뉴2</a></li>
+                     <li><a href="#">서브메뉴3</a></li>
                   </ul>
                </li>
             </ul>
-         </div>
-      </header>
-      <div class="img-slide"></div>
-      <div class="content">
-         <div class="notice"></div>
-         <div class="banner"></div>
-         <div class="shortcut"></div>
+         </nav>
       </div>
-      <footer>
-         <div class="footer">
-            <div class="logo"><img src="" alt=""><a href=""></a></img></div>
-            <div class="footer-util">
-               <div class="footer-menu"></div>
-               <div class="copyright"></div>
+      <div class="img-slide">
+         <div class="slides">
+            <div class="slide"><a href="#"><img src="img/1.jpg" alt=""></a></div>
+            <div class="slide"><a href="#"><img src="img/2.jpg" alt=""></a></div>
+            <div class="slide"><a href="#"><img src="img/3.jpg" alt=""></a></div>
+         </div>
+      </div>
+      <div class="content">
+         <div class="tab">
+            <div class="tab-box">
+               <div class="tabcon active"><a href="#">공지사항</a></div>
+               <div class="tabcon"><a href="#">갤러리</a></div>
+            </div>
+            <div class="noticecon on">
+               <table>
+                  <tr>
+                     <td><a href="#" class="popup">1231231231231231221312312312321213</a></td>
+                     <th>20202020</th>
+                  </tr>
+                  <tr>
+                     <td><a href="#">1231231231231231221312312312321213</a></td>
+                     <th>20202020</th>
+                  </tr>
+                  <tr>
+                     <td><a href="#">1231231231231231221312312312321213</a></td>
+                     <th>20202020</th>
+                  </tr>
+                  <tr>
+                     <td><a href="#">1231231231231231221312312312321213</a></td>
+                     <th>20202020</th>
+                  </tr>
+               </table>
+            </div>
+            <div class="gallcon">
+               <a href="#"><img src="img/103APPLE_IMG_3847.JPG" alt=""></a>
+               <a href="#"><img src="img/103APPLE_IMG_3847.JPG" alt=""></a>
+               <a href="#"><img src="img/103APPLE_IMG_3847.JPG" alt=""></a>
             </div>
          </div>
-      </footer>
+         <div class="banner">
+            <h2>널 붙잡을 배너</h2>
+            <a href="#"><img src="img/103APPLE_IMG_3315.JPG" alt=""></a>
+         </div>
+         <div class="shortcut">
+            <div class="short"><a href="#"><img src="img/20190904132109.768945.jpg" alt=""></a>
+            <p>123</p>
+            </div>
+            <div class="short"><a href="#"><img src="img/1583755388.jpeg" alt=""></a>
+            <p>123</p>
+            </div>
+            <div class="short"><a href="#"><img src="img/FB_IMG_1579170671238.jpg" alt=""></a>
+            <p>123</p>
+            </div>
+         </div>
+      </div>
+      <div class="footer">
+         <div class="logo"><a href="#"><img src="img/logo.jpg" alt=""></a></div>
+         <div class="footer-util">
+            <div class="footer-nav">
+               <a href="#">어디로</a>
+               <a href="#">가야하오</a>
+               <a href="#">나도</a>
+               <a href="#">몰라</a>
+            </div>
+            <div class="copyright">123123123123aaaa</div>
+         </div>
+      </div>
    </div>
 </body>
 </html>
