@@ -36,8 +36,11 @@ $(function (){
         $('.slides').animate({marginLeft:-1200*i},500)
     }
     setInterval(slide,2000)
+
+    
     $('.popup').click(function(){
         $('.modal').show()
+        return false
     })
     $('.btn').click(function(){
         $('.modal').hide()
